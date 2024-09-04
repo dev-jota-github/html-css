@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ficha de inscrição</h1>
+    <form action="">
+        first name <input type="text" name = "first_name" placeholder="Digite seu primeiro nome"/><br><hr>
+        last name <input type="text" name = "last_name" placeholder="Digite seu ultimo nome"/><br>
+        <p>sexo:</p>
+        <input type="radio" name="sexo" value="m" required> Masculino
+        <input type="radio" name="sexo" value="f" required> Feminino
+        <p>Reside:</p>
+        <input type="radio" name="local" value="cap"> Na Capital
+        <input type="radio" name="local" value="int"> No Interior
+        <p>Assinale abaixo os programas de computador que você domina</p>
+        <input type="checkbox" name="photoshop" value="ps">Photoshop <br>
+        <input type="checkbox" name="prog" value="wd">Word <br>
+        <input type="checkbox" name="prog" value="ex">Excel <br>
+        <input type="checkbox" name="prog" value="gp">Gimp <br>
+        <input type="checkbox" name="prog" value="vs">VSCode <br>
+        <input type="checkbox" name="prog" value="bl">Blender<br>
+        <p>Cargo</p>
+        <select name="Cargo" id="">
+            <option value="analista">Analista de Sistemas</option>
+            <option value="gerente">Gerente de T.I.</option>
+            <option value="programador">Programador java</option>
+            <option value="webmaster">WebMaster</option>
+        </select>
+        <p>Por que você deseja trabalhar em nossa empresa?</p>
+        <textarea name="pq" id="" rows="6" cols="37" maxlength="234">
+
+        </textarea>
+        <p style="text-align: center; margin-top: 50px;">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar Campos">
+        </p>
+    </form>
+</body>
+</html>
