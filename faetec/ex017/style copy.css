@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 400px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+h1{
+    text-align: center;
+    padding: 20px;
+}
+.modeloveiculo{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between
+    ;
+    margin-bottom: 20px;
+}
+.valorveiculo{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.anoveiculo{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.marcaveiculo{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+hr{
+    margin-bottom: 20px;
+}
+button{
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+}

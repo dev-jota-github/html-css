@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela com Efeito de Vidro</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #ecf0f1;
+            background: url('imagens/neon.jpg') center/cover no-repeat;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+        }
+        th, td {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 20px;
+            text-align: left;
+        }
+        th {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        tr:nth-child(odd) {
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+        tr:hover {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Pessoas</th>
+                <th>Empresas</th>
+                <th>Países</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Silva</td>
+                <td>TechSolutions Ltda.</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>João Santos</td>
+                <td>Global Enterprises</td>
+                <td>Estados Unidos</td>
+            </tr>
+            <tr>
+                <td>Maria Oliveira</td>
+                <td>InovaCorp</td>
+                <td>Japão</td>
+            </tr>
+            <tr>
+                <td>Pedro Costa</td>
+                <td>EcoFarma</td>
+                <td>França</td>
+            </tr>
+            <tr>
+                <td>Carla Almeida</td>
+                <td>BrightWave Inc.</td>
+                <td>Austrália</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

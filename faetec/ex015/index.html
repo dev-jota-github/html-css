@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let alunos = [
+        ["João", 8, 7, 10],
+        ["Maria", 7, 5, 8],
+        ["Ana", 6, 10, 9]
+    ]
+    document.write(alunos[0][0]+" 1ª Nota " + alunos[0][1] + ", 2ª Nota " + alunos [0][2] + ", 3ª Nota " + alunos [0][3] + "<p>");
+    document.write(alunos[1][0]+" 1ª Nota " + alunos[1][1] + ", 2ª Nota " + alunos [1][2] + ", 3ª Nota " + alunos [1][3] + "<p>");
+    document.write(alunos[2][0]+" 1ª Nota " + alunos[2][1] + ", 2ª Nota " + alunos [2][2] + ", 3ª Nota " + alunos [2][3] + "<p>");
+
+        
+    let somaNotas = 0;
+    somaNotas = alunos[0][1]+alunos[0][2]+alunos[0][3];
+    let media = somaNotas / 3
+    document.write(alunos[0][0] + " - Média " + media.toFixed(2) + "<p>");
+    
+</script>
+</html>

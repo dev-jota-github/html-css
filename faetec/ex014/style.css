@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+
+body{
+    height: 95vh;
+    background: url(imagens/1.png) center/cover no-repeat;
+
+}
+h1 {
+    
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.vermelho{
+    margin: auto;
+    width: 300px;
+    color: white;
+    background-color: red;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.verde{
+    margin: auto;
+    width: 300px;
+    color: white;
+    background-color: green;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.amarelo{
+    margin: auto;
+    width: 300px;
+    color: black;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.azul{
+    margin: auto;
+    width: 300px;
+    color: white;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.preto{
+    margin: auto;
+    width: 300px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+p:hover{
+    font-size: 24px;
+    transition: 0.5s;
+    cursor: pointer;
+}

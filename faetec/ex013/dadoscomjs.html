@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background: url(imagens/neon.jpg) center/cover no-repeat;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: normal;
+        }
+        button {
+            padding: 20px 50px;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.075);
+            backdrop-filter: blur(3px);
+        }
+        button:hover {
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.13);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Trabalhando com dados digitados</h1>
+        <button onclick="clicou()">Clique aqui</button>
+    </div>
+    
+    <script>
+        function clicou() {
+            let nome = window.prompt("What is your name?")
+            window.alert(`Hello ${nome}, nice to meet you!`);
+        }
+    </script>
+</body>
+</html>

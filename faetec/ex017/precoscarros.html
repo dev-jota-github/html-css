@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style copy.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Preços dos Carros</h1>
+    <div class="modeloveiculo">
+        <p>Digite o modelo do Veículo</p>
+        <input type="text" id="modelo">
+    </div>
+    <div class="valorveiculo">
+        <p>Digite o valor do carro</p><input type="text" id="price">
+    </div>
+    <div class="anoveiculo">
+        <p>Selecione o ano do Veículo</p>
+        <select name="anocar" id="anocar">
+            <option value="">Selecione aqui</option>
+            <option value="15">1980 até 1999</option>
+            <option value="10">2000 até 2005</option>
+            <option value="8">2006 até 2010</option>
+            <option value="5">2011 até 2025</option>
+        </select>
+    </div>
+    <div class="marcaveiculo">
+        <p>Selecione a marca do Veículo</p>
+        <select name="anocar" id="marca">
+            <option value="">Selecione aqui</option>
+            <option value="Vw">VW</option>
+            <option value="Gm">GM</option>
+            <option value="Ford">Ford</option>
+            <option value="Fiat">Fiat</option>
+        </select>
+    </div>
+    <hr>
+    <button onclick="consultar()"> Consultar Valor</button>
+    <div id="resultado"></div>
+
+    <script>
+        function consultar() {
+            // Pegar o Modelo do Carro
+            const modelo = document.getElementById('modelo').value;
+            
+            //Pegar o Preço do Carro
+            const precoInicial = parseFloat(document.getElementById('price').value);
+    
+            // Pegar o acréscimo baseado no ano do veículo
+            const acrescimoAno = parseFloat(document.getElementById('anocar').value);
+    
+            // Pegar a marca do veículo
+            const marca = document.getElementById('marca').value;
+    
+            if (isNaN(precoInicial) || acrescimoAno === "" || marca === "") {
+                alert("Por favor, preencha todos os campos corretamente.");
+                return;
+            }
+    
+            // Aplicar acréscimo com base no ano
+            let precoFinal = precoInicial + (precoInicial * (acrescimoAno / 100));
+    
+            // Aplicar desconto com base na marca
+            let desconto = 0;
+            if (marca === "Vw") {
+                desconto = 3; // VW tem 3% de desconto
+            } else if (marca === "Gm") {
+                desconto = 6; // GM tem 6% de desconto
+            } else if (marca === "Ford") {
+                desconto = 5; // Ford tem 5% de desconto
+            } else if (marca === "Fiat") {
+                desconto = 8; // Fiat tem 8% de desconto
+            }
+    
+            // Calcular o valor final após o desconto
+            precoFinal = precoFinal - (precoFinal * (desconto / 100));
+    
+            // Exibir o resultado
+            document.getElementById('resultado').innerHTML = `<h2>O valor final do ${marca} ${modelo} é: R$ ${precoFinal.toFixed(2)}</h2>`;
+        }
+    </script>
+</body>
+</html>

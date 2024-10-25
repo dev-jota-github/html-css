@@ -1,0 +1,12 @@
+body{
+    display: flex;
+    height: 97vh;
+}
+div.amarelo {
+    background-image: url(imagens/amarelo.gif);
+    background-repeat: no-repeat;
+}
+div.azul {
+    background-image: url(imagens/azul.gif);
+    background-repeat: no-repeat;
+}

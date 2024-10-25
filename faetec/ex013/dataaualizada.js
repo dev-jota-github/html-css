@@ -1,0 +1,12 @@
+var today = new Date();
+document.write("<b>" + today + "</b>" + "<p>");
+var dd = today.getDate();
+document.write("<b>" + dd + "</b>" + "<p>");
+var mm = today.getMonth() + 1;
+document.write("<b>" + mm + "</b>" + "<p>");
+var yyyy = today.getFullYear();
+document.write("<b>" + yyyy + "</b>" + "<p>");
+if (dd < 10) dd = "0" + dd;
+if (mm < 10) mm = "0" + mm;
+today = dd + "-" + mm + "-" + yyyy;
+document.write("<b>" + today + "</b>");

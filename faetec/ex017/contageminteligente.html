@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contagem Inteligente</title>
+</head>
+<body>
+    <h1>Contagem Inteligente</h1>
+    <p>Digite um número para iniciar a contagem:</p>
+    
+    <p>Número inicial:</p>
+    <input type="number" placeholder="Digite aqui" id="inicial">
+    
+    <p>Número final:</p>
+    <input type="number" placeholder="Digite aqui" id="final">
+    
+    <hr>
+    
+    <button onclick="contar()">Contar</button>
+    <div id="result"></div>
+
+    <script>
+        function contar() {
+            let result = document.getElementById('result');
+            let inicial = parseInt(document.getElementById('inicial').value);
+            let final = parseInt(document.getElementById('final').value);
+
+            // Limpa o conteúdo anterior
+            result.innerHTML = '';
+
+            // Verifica se os números são iguais
+            if (inicial === final) {
+                result.innerHTML += `Não é possível contar, pois os números são iguais.`;
+            } else {
+                result.innerHTML += `<h2>Contando de ${inicial} até ${final}</h2>`;
+
+                // Contagem crescente
+                if (inicial < final) {
+                    for (let cont = inicial; cont <= final; cont++) {
+                        result.innerHTML += `${cont} &#x1F449; `;
+                    }
+                }
+                // Contagem decrescente
+                else {
+                    for (let cont = inicial; cont >= final; cont--) {
+                        result.innerHTML += `${cont} &#x1F449; `;
+                    }
+                }
+                result.innerHTML += `&#x1F3C1;`; // Bandeira para indicar o final da contagem
+            }
+        }
+    </script>
+
+</body>
+</html>

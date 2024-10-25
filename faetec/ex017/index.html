@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calcular Percentual</title>
+</head>
+<body>
+    <h1>Calcule o Percentual</h1>
+    <form action="" class="caixa1">
+        <input type="number" class="number1" id="number1" placeholder="Ex: 4">
+        <p>Está para</p>
+        <input type="number" class="number11" id="number11" placeholder="Ex: 100">
+    </form>
+    <h2>Assim como</h2>
+    <form action="" class="caixa2">
+        <input type="number" class="number2" id="number2" placeholder="Ex: 2">
+        <p>Está para</p>
+        <div class="result-input is-disabled" id="resposta" title="Aqui virá a resposta da regra de três"><div class="result-data">X</div></div>
+    </form>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <script>
+        function calcular() {
+            // Obter valores das primeiras entradas
+            const num1 = parseFloat(document.getElementById('number1').value);
+            const num11 = parseFloat(document.getElementById('number11').value);
+
+            // Obter o valor do segundo número
+            const num2 = parseFloat(document.getElementById('number2').value);
+
+            if (isNaN(num1) || isNaN(num11) || isNaN(num2)) {
+                alert('Por favor, insira valores válidos');
+                return;
+            }
+
+            // Aplicar a regra de três
+            const resultado = (num2 * num11) / num1;
+
+            // Atualizar o conteúdo do div com o resultado
+            document.getElementById('resposta').innerHTML = `<div class="result-data">${resultado.toFixed(2)}%</div>`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada Flash</title>
+</head>
+<body>
+    <h1>Tabuada Flash</h1>
+    <p>Digite um número para iniciar a tabuada</p>
+    <input type="number" id="num" placeholder="Digite um número">
+    <button onclick="calcular()">Calcular</button>
+    
+    <div id="result"></div>
+
+    <script>
+        function calcular() {
+            let num = parseInt(document.getElementById('num').value);  // Obtém o valor do input e converte para número
+            let result = document.getElementById('result');  // Seleciona a div para exibir o resultado
+
+            // Limpa o conteúdo anterior
+            result.innerHTML = '';
+
+            // Verifica se o valor é válido
+            if (isNaN(num)) {
+                result.innerHTML = 'Por favor, digite um número válido!';
+                return;
+            }
+
+            // Gera a tabuada de 1 a 10
+            result.innerHTML = `<h2>Tabuada de ${num}</h2>`;
+            for (let i = 1; i <= 10; i++) {
+                result.innerHTML += `${num} x ${i} = ${num * i}<br>`;
+            }
+        }
+    </script>
+
+</body>
+</html>

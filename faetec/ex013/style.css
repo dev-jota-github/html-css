@@ -1,0 +1,79 @@
+body {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* A página ocupa toda a altura da tela */
+    margin: 0; /* Remove margens padrão */
+    background: url('imagens/neon.jpg') center/cover no-repeat;
+}
+
+.container {
+    display: grid; /* Grid para organizar os componentes */
+    grid-template-columns: 1fr 1fr; /* Duas colunas de largura igual */
+    gap: 30px; /* Espaço entre os elementos */
+    align-items: center; /* Alinha os elementos ao centro verticalmente */
+}
+
+.clock-container {
+    text-align: center; /* Centraliza o conteúdo do relógio */
+    background: rgba(255, 255, 255, 0.055); /* Fundo semitransparente */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Arredonda os cantos */
+    backdrop-filter: blur(5px); /* Desfoque de fundo */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#clock {
+    font-size: 48px; /* Tamanho grande para o relógio */
+    margin-bottom: 10px; /* Espaçamento inferior entre relógio e data */
+    color: white;
+}
+
+#date {
+    font-size: 24px; /* Tamanho da data */
+    color: white;
+}
+
+.calculator {
+    background-color: #0000001e; /* Fundo escuro para a calculadora */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Arredonda os cantos */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6); /* Sombra para efeito de profundidade */
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#display {
+    width: 94%; /* O display ocupa 100% da largura */
+    height: 50px; /* Altura do display */
+    font-size: 24px; /* Tamanho do texto do display */
+    text-align: right; /* Texto alinhado à direita */
+    margin-bottom: 10px; /* Espaçamento abaixo do display */
+    padding: 10px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    background-color: #222; /* Cor de fundo do display */
+    color: #fff; /* Cor do texto no display */
+    border-radius: 5px; /* Arredonda os cantos do display */
+}
+
+.buttons {
+    display: grid; /* Usa grid layout para os botões */
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas de tamanho igual */
+    gap: 10px; /* Espaço entre os botões */
+}
+
+button {
+    width: 100%; /* Cada botão ocupa 100% de sua célula */
+    padding: 20px; /* Espaçamento interno dos botões */
+    font-size: 18px; /* Tamanho do texto dos botões */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Arredonda os cantos dos botões */
+    background-color: #444; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto dos botões */
+    cursor: pointer; /* Mostra um cursor de "mão" ao passar sobre os botões */
+}
+
+button:hover {
+    background-color: #555; /* Muda a cor de fundo ao passar o mouse sobre os botões */
+}

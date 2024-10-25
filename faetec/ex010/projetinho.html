@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: normal;
+        }
+        nav{
+            background: linear-gradient(to top, rgb(28, 105, 110), rgb(42, 157, 165));
+            color: white;
+            text-align: center;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        }
+        .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+        }
+        .menu > a{
+            border: 2px solid white;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            padding: 3px 10px;
+            margin-right: 10px;
+        }
+        .menu > a:hover{
+            transition: 0.5s;
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            color: rgb(28, 105, 110);
+        }
+        
+        header{
+            width: 800px;
+            margin: auto;
+        }
+        main{
+            width: 800px;
+            margin: auto;
+        }
+        h1{
+            font-weight: bolder;
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        h2{
+            margin-top: 15px;
+            font-size: 2rem;
+            padding: 10px;
+            color: rgb(28, 105, 110);
+        }
+        h3{
+            color: rgb(28, 105, 110);
+            font-size: 1.5rem;
+            text-align: center;
+            margin: 16px;
+        }
+        
+        header>p{
+            font-weight: 500;
+            font-size: 1.2rem;
+            text-indent: 16px;
+            text-align: justify;
+            margin: 16px 0px ;
+        }
+        main>ol>p{
+            font-weight: 500;
+            font-size: 1.2rem;
+            text-indent: 16px;
+            text-align: justify;
+            margin: 16px 0px ;
+        }
+        
+        img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 500px;
+        }
+        ol{
+            list-style-position: inside;
+            margin: 10px 10px;
+        }
+        li{
+            margin: 10px 0px;
+            font-size: 2rem;
+            background-image: linear-gradient(to right, rgb(42, 157, 165), transparent);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;;
+        }
+        footer > p{
+            text-align: center;
+            background-color: rgb(42, 157, 165);
+            color: white;
+            padding: 5px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <h1>Lugares no mundo</h1>
+        <div class="menu">
+            <a href="#">
+                <p>Home</p>
+            </a>
+            <a href="#">
+                <p>About</p>
+            </a>
+            <a href="#">
+                <p>Fale Conosco</p>
+            </a>
+        </div>
+    </nav>
+    <header>
+        <h2>Já sabe pra onde vai nas férias ?</h2>
+        <p>Esse artigo busca informar e remcomendar os 5 melhores lugares para viajar com toda a família, visando a segurança, preços de hospdagens e pontos turísticos e históricos para conhecer</p>
+    </header>
+    <main>
+        <h3>5 Melhores lugares para viajar</h3>
+        <ol>
+            <li>Ilha Sul (Nova Zelândia)</li>
+
+            <p>A Ilha Sul da Nova Zelândia está no primeiro lugar do ranking dos melhores lugares do mundo para se visitar.</p>
+
+            <P>A ilha é famosa por suas geladeiras, montanhas, lagos e praias. Ficou conhecida por ser o local onde foi filmada a trilogia cinematográfica O Senhor dos Anéis.</P>
+
+            <p>As principais atrações da ilha é o Jardim Botânico de Christchurch, o fiorde Milford Sound e a geleira Franz Josef Glacier.</p>
+
+            <a href="#" target="_blank"><img src="https://agenteurgente.com.br/site/wp-content/uploads/2021/12/ilha-sul-768x606.jpg" alt=""></a>
+
+            <li>Paris (França)</li>
+
+            <p>Em segundo lugar, está a cidade de Paris. A Cidade Luz é um dos locais mais visitados do mundo, com mais de 30 milhões de turistas por ano.</p>
+
+            <p>Além da excelente comida, a cidade possui diversos pontos turísticos icônicos, como a Torre Eiffel, o Museu do Louvre e a Catedral de Notre-Dame.</p>
+
+            <div class="picture"><a href="#" target="_blank"><img src="https://agenteurgente.com.br/site/wp-content/uploads/2021/12/paris-768x611.jpg" alt=""></a></div>
+
+            <li>Bora Bora (Polinésia Francesa)</li>
+
+            <p>A pequena ilha da Polinésia Francesia, fica em terceira posição do ranking. A ilha é famosa pelas belas praias com areia branca e águas cristalinas, lagoas azuis e luxuosos resorts.</p>
+
+            <p>A praia Matira Beach, o vulcão Mount Otemanu e o aquário natural Bora Bora Lagoonarium, estão entre as principais atrações do local.</p>
+
+            <a href="#" target="_blank"><img src="https://agenteurgente.com.br/site/wp-content/uploads/2021/12/bora-bora-768x609.jpg" alt=""></a>
+
+            <li>Maui (Havaí)</li>
+
+            <p>Maui é a segunda maior ilha do arquipélago havaiano, conhecida pelas praias paradisíacas, prática de snorkel e o luau havaiano.</p>
+
+            <p>As principais atrações turísticas da ilha são: a estrada panorâmica Hana Highway, a praia Ka’anapali Beach e o vulcão Haleakalā.</p>
+
+            <a href="#" target="_blank"><img src="https://agenteurgente.com.br/site/wp-content/uploads/2021/12/maui-768x610.jpg" alt=""></a>
+
+            <li>Tahiti (Polinésia Francesa)</li>
+
+            <p>O Tahiti é a maior ilha do conjunto de arquipélagos da Polinésia Francesa. Os resorts de luxo no estilo bangalôs são um dos cartões postais da ilha, destino preferido por muitos casais.</p>
+
+            <p>As praias La Plage de Maui e Papenoo Beach estão entre as principais ponto de turísticos de Tahiti, conhecidas pelas águas azul turquesa.</p>
+
+            <a href="#" target="_blank"><img src="https://agenteurgente.com.br/site/wp-content/uploads/2021/12/tahiti-768x608.jpg" alt=""></a>
+
+        </ol>
+        <div class="galery">
+            
+        </div>
+    </main>
+    <footer>
+        <p>Site criado por João marcos</p>
+    </footer>
+</body>
+</html>

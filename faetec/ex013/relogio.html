@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio e Calculadora</title>
+    <link rel="stylesheet" href="style.css"> <!-- Vincula o arquivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <!-- Relógio -->
+        <div class="clock-container">
+            <div id="clock"></div> <!-- Exibe o relógio -->
+            <div id="date"></div> <!-- Exibe a data -->
+        </div>
+
+        <!-- Calculadora -->
+        <div class="calculator">
+            <input type="text" id="display" disabled> <!-- Tela da calculadora -->
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button> <!-- Limpa o display -->
+                <button onclick="deleteLast()">DEL</button> <!-- Apaga o último caractere -->
+                <button onclick="appendToDisplay('/')">/</button> <!-- Adiciona divisão -->
+                <button onclick="appendToDisplay('*')">*</button> <!-- Adiciona multiplicação -->
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')">-</button> <!-- Adiciona subtração -->
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('+')">+</button> <!-- Adiciona soma -->
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="calculate()">=</button> <!-- Calcula a expressão -->
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button> <!-- Adiciona ponto decimal -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Vincula o arquivo JavaScript -->
+</body>
+</html>

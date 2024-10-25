@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="cadastro" method="post" action="https://www.google.com" onsubmit="return valida();">
+        <p>Email:</p><input name="email" type="text">
+        <p>Senha:</p><input name="senha" type="password"><hr>
+        <button type="submit">Enviar</button>
+    </form>
+    <script>
+        function valida(){
+            if (document.cadastro.email.value === ""){
+                alert("Digite um email válido");
+                return false;
+            }
+            if (document.cadastro.senha.value !== "1234"){
+                alert("senha incorreta");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

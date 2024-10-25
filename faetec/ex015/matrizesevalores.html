@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Alunos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .aluno {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cadastro de Alunos</h1>
+    <form id="nomeForm">
+      <div id="alunosContainer"></div>
+      <button type="submit">Adicionar Alunos</button>
+    </form>
+
+    <h2>Consultar Média:</h2>
+    <input type="text" id="consultaNome" placeholder="Digite o nome do aluno" />
+    <button id="consultarMedia">Consultar Média</button>
+
+    <script>
+      const alunos = [];
+      const numAlunos = 4;
+      const alunosContainer = document.getElementById("alunosContainer");
+
+      // Criação dinâmica dos campos de entrada de dados para os alunos
+      for (let i = 1; i <= numAlunos; i++) {
+        alunosContainer.innerHTML += `
+        <div class="aluno">
+            <label for="nome${i}">Nome ${i}:</label>
+            <input type="text" id="nome${i}" required>
+            <label for="nota${i}_1">Nota 1:</label>
+            <input type="number" id="nota${i}_1" required>
+            <label for="nota${i}_2">Nota 2:</label>
+            <input type="number" id="nota${i}_2" required>
+            <label for="nota${i}_3">Nota 3:</label>
+            <input type="number" id="nota${i}_3" required>
+        </div>
+    `;
+      }
+
+      // Quando o formulário é submetido, adiciona os alunos à lista
+      document
+        .getElementById("nomeForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          for (let i = 1; i <= numAlunos; i++) {
+            const nome = document.getElementById(`nome${i}`).value;
+            const notas = [
+              parseFloat(document.getElementById(`nota${i}_1`).value),
+              parseFloat(document.getElementById(`nota${i}_2`).value),
+              parseFloat(document.getElementById(`nota${i}_3`).value),
+            ];
+
+            // Cálculo da média das três notas
+            const media = notas.reduce((a, b) => a + b, 0) / notas.length;
+
+            // Adiciona o aluno à lista com seu nome e média
+            alunos.push({ nome, media });
+          }
+
+          // Limpa o formulário
+          document.getElementById("nomeForm").reset();
+        });
+
+      // Função para consultar a média e aprovação do aluno
+      document.getElementById("consultarMedia").addEventListener("click", function () {
+    const nomeConsulta = document.getElementById("consultaNome").value;
+    const alunoEncontrado = alunos.find(
+        (aluno) => aluno.nome.toLowerCase() === nomeConsulta.toLowerCase()
+    );
+
+    if (alunoEncontrado) {
+        const media = alunoEncontrado.media;
+        let situacao;
+
+        if (media < 4) {
+            situacao = "Reprovado";
+        } else if (media < 7) {
+            situacao = "Recuperação";
+        } else {
+            situacao = "Aprovado";
+        }
+
+        alert(
+            `A média de ${alunoEncontrado.nome} é: ${media.toFixed(2)}. Situação: ${situacao}`
+        );
+    } else {
+        alert("Aluno não encontrado!");
+    }
+});
+    </script>
+  </body>
+</html>

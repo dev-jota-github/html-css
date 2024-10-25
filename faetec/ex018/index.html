@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Show</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      b = 0;
+      function slideshow() {
+        const foto = document.getElementById("foto");
+        switch (b) {
+          case 0:
+            foto.src = "1.jpg";
+            break;
+          case 1:
+            foto.src = "2.jpg";
+            break;
+          case 2:
+            foto.src = "3.jpg";
+            b = -1;
+        }
+        b++;
+      }
+      setInterval(slideshow, 3000);
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+  </head>
+  <body>
+    <header>
+        <h1>Bem vindo</h1>
+        <div class="menu">
+            <a href="">
+                <p>Sobre nós</p>
+            </a>
+            <a href="">
+                <p>Fale conosco</p>
+            </a>
+            <a href="">
+                <p>Termos de Uso</p>
+            </a>
+            <a href="">
+                <p>Devoluções</p>
+            </a>
+        </div>
+    </header>
+    <main>
+        <img
+          id="foto"
+          src="1.jpg"
+          alt="Slideshow"
+          />
+          </body>
+    </main>
+</html>

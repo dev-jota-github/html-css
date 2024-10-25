@@ -1,0 +1,45 @@
+body{
+    margin: auto;
+    background-image: linear-gradient(to bottom, black, rgb(45, 1, 56));
+    color: white;
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+
+}
+p{
+    margin: 0px 100px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+#conteiner{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    align-items: end;
+    gap: 2px;
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: normal;
+    white-space: wrap;
+    scroll-snap-type: mandatory;
+}
+
+.blue{
+    background-color: skyblue;
+    padding: 20px;
+    height: 40%;
+}
+.green{
+    background-color: greenyellow;
+    padding: 30px;
+    height: 70%;
+}
+.blue, .green{
+    margin: 0px 5px;
+}

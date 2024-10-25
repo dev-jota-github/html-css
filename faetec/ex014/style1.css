@@ -1,0 +1,19 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+
+}
+button{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+}
+section > p{
+    text-align: center;
+}

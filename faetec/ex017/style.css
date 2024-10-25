@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    max-width: 500px;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+}
+h2{
+    text-align: center;
+    padding: 10px;
+}
+.caixa1{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.caixa2{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+#resposta{
+    min-width: 170px;
+    border: 1px solid black;
+}
+.result-data{
+    text-align: center;
+}
+button{
+    color: white;
+    background-color: black;
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

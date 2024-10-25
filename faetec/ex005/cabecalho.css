@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body {
+    background-color: black;
+}
+header img {
+    width: 300px;
+    display: block;
+    margin: 10px auto 10px auto;
+}

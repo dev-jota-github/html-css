@@ -1,0 +1,77 @@
+body{
+    background-color: rgb(58, 58, 58);
+}
+h1{
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(0, 86, 199);
+}
+h2{
+    background-image: linear-gradient(to right, rgb(0, 89, 148), rgb(0, 1, 41));
+    border-radius: 10px;
+    padding: 5px;
+    color: white;
+}
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+img{
+    width:80px;
+    margin: auto;
+}
+aside{
+    display: flex;
+    background-color: rgb(204, 204, 204);
+    margin: 15px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 20px;
+}
+main{
+    margin: auto;
+    padding: 10px 20px;
+    width: 500px;
+    height: 710px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.247);
+}
+aside a{
+    color: black;
+}
+aside a:hover{
+    color: rgb(0, 89, 148);
+}
+ul a{
+    text-decoration: none;
+}
+li{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    
+}
+li:hover{
+    cursor: pointer;
+    color: black;
+    font-size: 1em;
+    transition: 0.5s;
+    list-style: disc;
+    background-image: linear-gradient(to right, rgb(177, 177, 177), transparent);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar{
+    width: 15px;
+    background-color: black;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 89, 148);
+    width: 10px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
