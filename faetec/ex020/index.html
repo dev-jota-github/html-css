@@ -1,0 +1,80 @@
+<!-- Indica que o documento é um arquivo HTML. -->
+<!DOCTYPE html>
+
+<!-- Define a linguagem do conteúdo da página. -->
+<html lang="pt-br">
+
+<!-- Armazena informações sobre a página. -->
+<head>
+
+	<!-- Conjunto de caracteres que contém acentuação e ç. -->
+	<meta charset="utf-8">
+
+	<!-- Configuração da janela de visualização ( responsividade ). -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Importação do arquivo CSS. -->
+	<link rel="stylesheet" type="text/css" href="layout.css">
+
+	<!-- Título da aba do navegador -->
+	<title>Layout 1</title>
+</head>
+
+<!-- Conteúdo apresentado na tela. -->
+<body>
+
+	<!-- Agrupa os elementos que compõe o cabeçalho. -->
+	<header>
+		<img src="Imagens/Logo.webp" alt="" id="logo">
+
+		<button id="openMenu">&#9776;</button>
+	</header>
+
+	<!-- Agrupa links de navegação no site. -->
+	<nav id="menu">
+
+		<button id="closeMenu">X</button>
+
+		<a href="#">Home</a>
+		<a href="#">Sobre nós</a>
+		<a href="#">Produtos</a>
+		<a href="#">Contato</a>
+	</nav>
+
+	<!-- Agrupa o conteúdo principal da página ou aplicação. -->
+	<main>
+		<div class="conteinerhero">
+			<picture>
+				<source srcset="https://s3-sa-east-1.amazonaws.com/manyplaces-p/starbucks/site/banners/banner_1657816974_mobile.jpg?crc=38d1defd" media="(max-width: 768px)">
+				<source srcset="https://s3-sa-east-1.amazonaws.com/manyplaces-p/starbucks/site/banners/banner_1657816974_desktop.jpg?crc=ab9f1ec3">
+				<img class="hero1" alt="Starbucks" src="https://s3-sa-east-1.amazonaws.com/manyplaces-p/starbucks/site/banners/banner_1657816974_desktop.jpg?crc=ab9f1ec3">
+			</picture>
+		</div>
+		<div class="cards">
+			<div class="comunicado">
+				<h1>Comunicado</h1>
+				<p>Encerramento do Programa Starbucks Rewards, Starbucks Card e aplicativo Starbucks Brasil.</p>
+				<a href="#" class="saibamais">Saiba mais</a>
+			</div>
+			<div class="coldbrew">
+				<div class="surpresa">
+					<h1>Uma surpresa refrescante para você</h1>
+					<p>Conheça nossa linha de <span style="font-weight: 800">Cold Brew e Refreshers™</span></p>
+					<a href="#" class="saibamais">Saiba mais</a>
+				</div>
+				<div class="coldbanner">
+					<img alt="Mocha Cookie Espresso e Frappuccino®" class="img-responsive" src="Imagens/15170_SBUX_REW_BANNERS3MAIO-02.png">
+				</div>
+			</div>
+		</div>
+	</main>
+	<aside>
+
+	</aside>
+	<footer>
+
+	</footer>
+
+	<!-- Importação do arquivo JavaScript. -->
+	<script type="text/javascript" src="script.js"></script>
+</body>
