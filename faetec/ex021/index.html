@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BurguerShot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="/imagens/burguershotico.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section>
+        <a href="#" class="logo">
+          <img src="imagens/logohorrizontal.webp" alt="Logo" />
+        </a>
+        <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#about">Sobre</a>
+          <a href="#menu">Menu</a>
+          <a href="#review">Avaliações</a>
+          <a href="#address">Endereço</a>
+        </nav>
+        <div class="icons">
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios-filled/50/search--v1.png"
+            alt="search--v1"
+          />
+          <img
+            width="30"
+            height="30"
+            src="https://img.icons8.com/ios/50/shopping-cart--v1.png"
+            alt="shopping-cart--v1"
+          />
+        </div>
+        <div class="menu-mobile">
+          <button onclick="menushow()">
+            <img
+              width="30"
+              height="30"
+              src="https://img.icons8.com/ios-filled/50/menu--v1.png"
+              alt="menu--v1"
+            />
+          </button>
+        </div>
+        <div class="menu-mobile-list">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#review">Avaliações</a></li>
+                <li><a href="#address">Endereço</a></li>
+            </ul>
+        </div>
+      </section>
+    </header>
+    <div class="home-conteiner">
+      <section id="home">
+        <div class="content">
+          <img src="imagens/banner1.jpg" alt="Banners" id="foto" />
+        </div>
+      </section>
+    </div>
+    <section class="about" id="about">
+      <h2 class="title">Sobre <span>Nós</span></h2>
+      <div class="row">
+        <div class="conteiner-image">
+          <img src="imagens/loja.webp" alt="Sobre nós" />
+        </div>
+        <div class="content">
+          <h3>O que faz nosso Hamburguer especial?</h3>
+          <p>
+            Na <span>BurguerShot</span>, buscamos oferecer uma experiência única
+            com hambúrgueres artesanais feitos com ingredientes frescos e
+            combinações exclusivas. Com opções para todos os gostos, incluindo
+            vegetarianas e veganas, cada detalhe é pensado para garantir o sabor
+            e a qualidade em cada mordida. Venha nos conhecer e descubra o
+            verdadeiro prazer de um bom hambúrguer!
+          </p>
+          <a href="#" class="btn">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+    <section class="delivery">
+      <h2 class="title">Peça e receba em <span>casa!</span></h2>
+      <div class="row">
+        <div class="conteiner-image">
+          <img src="imagens/editar/foto-delivery.png" alt="Delivery" />
+        </div>
+        <div class="content">
+          <h3>O que faz nosso Hamburguer especial?</h3>
+          <p>
+            Aproveite o sabor dos nossos hambúrgueres artesanais sem sair de
+            casa! Faça seu pedido e receba uma explosão de sabores diretamente
+            na sua porta. É prático, rápido e delicioso.
+          </p>
+          <a href="#" class="btn">Saiba Mais</a>
+        </div>
+      </div>
+    </section>
+    <section class="address" id="address">
+      <h2 class="title">Nosso <span>endereço</span></h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.094785610065!2d-122.4064175846814!3d37.7858349797566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c2f2c4d93%3A0xe4d2c2a798ecf340!2sOpenAI!5e0!3m2!1sen!2sus!4v1619793472280!5m2!1sen!2sus"
+        frameborder="0"
+      ></iframe>
+    </section>
+    <footer class="footer">
+      <section>
+        <a href="#" class="logo">
+          <img src="imagens/logohorrizontal.webp" alt="Logo" />
+        </a>
+        <nav class="navbar">
+          <a href="#">Trabalhe conosco</a>
+          <a href="#about">Termos de uso</a>
+
+          <a href="#address">Endereço</a>
+        </nav>
+      </section>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
