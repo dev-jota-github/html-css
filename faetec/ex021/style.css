@@ -58,6 +58,7 @@ header {
   border-bottom: 0.1rem solid rgb(246, 164, 52);
   font-size: 2rem;
 }
+
 .icons img{
   margin: 1rem;
   cursor: pointer;
@@ -244,7 +245,7 @@ footer {
     border: none;
   }
   .menu-mobile-list{
-    display: block;
+    display: none;
   }
   .menu-mobile-list ul{
     display: flex;
