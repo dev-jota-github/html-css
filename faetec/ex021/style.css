@@ -124,8 +124,7 @@ header {
   max-width: 1024px;
 }
 .about .conteiner-image img{
-  height: 300px;
-  width: 400px;
+  width: 80vw;
   object-fit: cover;
 }
 .btn {
@@ -166,8 +165,8 @@ header {
   max-width: 1024px;
 }
 .delivery .row .conteiner-image img{
-  height: 300px;
-  object-fit: fit;
+  width: 80vw;
+  object-fit: cover;
 }
 .address {
   display: flex;
