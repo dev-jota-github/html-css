@@ -30,6 +30,7 @@ section {
 header {
   background-color: #ffffff;
   position: fixed;
+  height: 80px;
   top: 0;
   left: 0;
   right: 0;
@@ -78,6 +79,7 @@ header {
   padding-top: 50px;
 }
 .home-conteiner #home .content #foto {
+  padding-top: 11px;
   max-width: 1024px;
   width: 80vw;
   object-fit: fit;
@@ -121,7 +123,7 @@ header {
   width: 80vw;
   max-width: 1024px;
 }
-.conteiner-image img{
+.about .conteiner-image img{
   height: 300px;
   width: 400px;
   object-fit: cover;
@@ -162,6 +164,10 @@ header {
 .delivery{
   width: 80vw;
   max-width: 1024px;
+}
+.delivery .row .conteiner-image img{
+  height: 300px;
+  object-fit: fit;
 }
 .address {
   display: flex;
@@ -248,11 +254,13 @@ footer {
     display: none;
   }
   .menu-mobile-list ul{
+    background-color: white;
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-bottom: 1rem;
   }
+
   .open {
     display: block;
   }
