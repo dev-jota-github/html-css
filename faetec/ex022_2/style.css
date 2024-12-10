@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    font-size: 1rem;
+}
+header {
+    background-color: #fade0a;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 0;
+}
+.topo {
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fade0a;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+nav {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+header nav ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+header ul li {
+    list-style-type: none;
+    padding: 0 15px;
+}
+header ul li:hover {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    text-decoration: underline;
+}
+.pedido {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.pedido p{
+    background-color: #ed1f2d;
+    padding: 5px 15px;
+    border-radius: 40px;
+    color: white;
+    
+}
+.pedido a{
+    text-decoration: none;
+}
+
+.social img:hover {
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 30px;
+}
+.card {
+    flex: 1 1 calc(25% - 16px);
+    box-sizing: border-box;
+
+}
+.card img {
+    height: 300px;
+    object-fit: cover;
+}
+.grid{
+    margin: auto;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    padding-top: 30px;
+}
+.grid h1 {
+    padding-bottom: 10px;
+}
+.flexlayout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    padding: 30px;
+    gap: 20px;
+
+}
+.flexlayout p {
+    margin: auto;
+    font-weight: normal;
+    font-size: 1.2rem;
+    width: 500px;
+    display: block;
+    
+}
+.flexlayout img {
+    object-fit: cover;
+    width: 500px;
+    border-radius: 50px;
+}
+aside {
+    background-color: black;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    margin: 0px;
+}
+aside h1{
+    color: white;
+    text-align: center;
+    padding: 30px;
+
+}
+aside .mb-3{
+    color: white;
+    padding: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+footer{
+    background-color: #fade0a;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.rodape{
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+footer img{
+   margin: 10px; 
+}
+footer nav{
+    align-items: center;
+}
+footer nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0px;
+}
+footer nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+@media screen and (max-width: 970px){
+    header .topo nav{
+        display: none;
+    }
+    .card {
+        flex: 1 1 calc(50% - 16px);
+        box-sizing: border-box;
+    
+    }
+    .flexlayout{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin: 0;
+        padding: 0px;
+        height: 150px;
+        flex-wrap: wrap;
+    }
+    footer nav{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    footer nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
