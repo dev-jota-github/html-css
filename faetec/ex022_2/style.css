@@ -147,15 +147,14 @@ aside .mb-3{
 footer{
     background-color: #fade0a;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
 }
 .rodape{
     width: 100%;
     max-width: 1200px;
-    height: 100px;
     display: flex;
-    margin: auto;
     align-items: center;
 }
 footer img{
@@ -187,15 +186,23 @@ footer nav ul li{
         flex-direction: column;
         height: auto;
     }
-    .aside{
+    .flexlayout p{
+        width: auto;
+    }
+    .flexlayout img{
+        width: 400px;
+    }
+    aside{
         display: flex;
         flex-direction: column;
+        height: auto;
     }
 
     footer {
         margin: 0;
         padding: 0px;
-        height: 150px;
+        height: 180px;
+        padding: 10px;
         flex-wrap: wrap;
     }
     footer nav{
