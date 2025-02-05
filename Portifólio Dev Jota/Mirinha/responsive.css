@@ -1,0 +1,37 @@
+@media (max-width: 480px) {
+    
+    .dropdown {
+        display: block;
+    }
+    .nav-bar a {
+        display: none;
+    }
+    .caixa-principal {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .texto-principal h3 {
+        font-size: 3rem;
+    }
+    .texto-principal p {
+        font-size: 2rem;
+    }
+    .avatar img {
+        width: 80%;
+    }
+    .avatar {
+        justify-content: center;
+        display: flex;
+    }
+    .mira-video h2 {
+        font-size: 2rem;
+    }
+    .iframe-video iframe {
+        width: 80%;
+    }
+    .iframe-video p {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+}

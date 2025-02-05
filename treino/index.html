@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Treinos</title>
+    <style>
+        /* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* fundo preto */
+    color: #e0e0e0; /* texto claro */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Container geral */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #1d1d1d; /* fundo das seções */
+    border-radius: 8px;
+}
+
+/* Lista de Exercícios */
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center; /* Alinha checkbox e texto */
+}
+
+/* Estilos para Checkboxes */
+input[type="checkbox"] {
+    margin-right: 15px; /* Espaço entre o checkbox e o nome */
+}
+
+input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 165, 0, 0.8); /* Foco laranja */
+}
+
+/* Estilos para as opções abaixo do checkbox */
+ul li p {
+    margin-left: 10px; /* Espaço entre o nome do exercício e as opções */
+    color: #bbb; /* Cor das opções */
+    font-size: 0.9em; /* Menor para as opções */
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Checklist de Treinos</h1>
+
+        <!-- Dia 1 -->
+        <section>
+            <h2>Dia 1 – Push (Peitoral, Ombros e Tríceps) + Abdômen</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="supino-reto">
+                    <label for="supino-reto">Supino Reto com Barra – 4x8-10</label>
+                    <p>Opções: Supino com Halteres ou Máquina de Supino</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="supino-inclinado">
+                    <label for="supino-inclinado">Supino Inclinado com Halteres – 4x10-12</label>
+                    <p>Opções: Supino Inclinado na Máquina ou Fly Inclinado com Halteres</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="desenvolvimento-barra">
+                    <label for="desenvolvimento-barra">Desenvolvimento com Barra (Ombros) – 4x8-10</label>
+                    <p>Opções: Desenvolvimento com Halteres ou Desenvolvimento na Máquina</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="elevacao-lateral">
+                    <label for="elevacao-lateral">Elevação Lateral (Ombros) – 4x12-15</label>
+                    <p>Opções: Elevação Lateral na Polia ou Elevação Lateral Unilateral</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="triceps-testa">
+                    <label for="triceps-testa">Tríceps Testa com Barra EZ – 3x10-12</label>
+                    <p>Opções: Tríceps Testa com Halteres ou Extensão de Tríceps na Polia Alta</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="triceps-corda">
+                    <label for="triceps-corda">Tríceps Corda na Polia – 3x12-15</label>
+                    <p>Opções: Extensão de Tríceps com Barra Reta ou Francês Unilateral</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="abdominal-supra">
+                    <label for="abdominal-supra">Abdominal Supra com Peso – 3x20</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="prancha">
+                    <label for="prancha">Prancha Abdominal – 3x30-60s</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="abdominal-obliquo">
+                    <label for="abdominal-obliquo">Abdominal Oblíquo (com halteres) – 3x15 para cada lado</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dia 2 -->
+        <section>
+            <h2>Dia 2 – Pull (Costas e Bíceps)</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="barra-fixa">
+                    <label for="barra-fixa">Barra Fixa com Pegada Supinada – 4x6-8</label>
+                    <p>Opções: Pulldown Supinado na Polia ou Remada Curvada com Barra</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="remada-curvada">
+                    <label for="remada-curvada">Remada Curvada com Barra – 4x8-10</label>
+                    <p>Opções: Remada Unilateral com Halteres ou Remada Sentada na Máquina</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="puxada-aberta">
+                    <label for="puxada-aberta">Puxada Aberta na Polia – 4x10-12</label>
+                    <p>Opções: Puxada na Máquina ou Pull-Over na Polia Alta</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="remada-cavalinho">
+                    <label for="remada-cavalinho">Remada Cavalinho (T-Bar Row) – 4x8-10</label>
+                    <p>Opções: Remada Curvada ou Remada na Polia Baixa</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="rosca-direta">
+                    <label for="rosca-direta">Rosca Direta com Barra – 3x10-12</label>
+                    <p>Opções: Rosca Direta com Halteres ou Rosca na Máquina</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="rosca-martelo">
+                    <label for="rosca-martelo">Rosca Martelo com Halteres – 3x12-15</label>
+                    <p>Opções: Rosca Martelo na Corda ou Rosca Martelo Cruzada (unilateral)</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dia 3 -->
+        <section>
+            <h2>Dia 3 – Legs (Pernas e Abdômen)</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="agachamento-livre">
+                    <label for="agachamento-livre">Agachamento Livre com Barra – 4x8-10</label>
+                    <p>Opções: Agachamento Hack ou Agachamento Smith</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="leg-press">
+                    <label for="leg-press">Leg Press 45° – 4x10-12</label>
+                    <p>Opções: Avanço com Halteres ou Cadeira Extensora</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="cadeira-extensora">
+                    <label for="cadeira-extensora">Cadeira Extensora – 4x12-15</label>
+                    <p>Opções: Extensão Unilateral ou Agachamento Frontal com Barra/Halteres</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="stiff">
+                    <label for="stiff">Stiff com Barra ou Halteres – 4x8-10</label>
+                    <p>Opções: Levantamento Terra ou Flexora deitada na Máquina</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="cadeira-flexora">
+                    <label for="cadeira-flexora">Cadeira Flexora – 4x10-12</label>
+                    <p>Opções: Flexora Unilateral em Pé ou Stiff com Halteres</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="panturrilha-em-pe">
+                    <label for="panturrilha-em-pe">Panturrilha em Pé na Máquina – 3x15-20</label>
+                    <p>Opções: Panturrilha no Leg Press ou Panturrilha Sentado</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="elevacao-pernas">
+                    <label for="elevacao-pernas">Elevação de Pernas na Paralela – 3x15</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="prancha-lateral">
+                    <label for="prancha-lateral">Prancha Lateral (cada lado) – 3x30s</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="rollout-abdominal">
+                    <label for="rollout-abdominal">Rollout Abdominal (com roda) – 3x10-12</label>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dia 4 -->
+        <section>
+            <h2>Dia 4 – Upper (Parte Superior Geral)</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="supino-inclinado-upper">
+                    <label for="supino-inclinado-upper">Supino Inclinado com Halteres – 4x8-10</label>
+                    <p>Opções: Supino Inclinado com Barra ou Máquina</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="puxada-aberta-upper">
+                    <label for="puxada-aberta-upper">Puxada Aberta na Polia – 4x10-12</label>
+                    <p>Opções: Barra Fixa Assistida ou Remada Sentada na Máquina</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="desenvolvimento-militar">
+                    <label for="desenvolvimento-militar">Desenvolvimento Militar com Barra – 4x8-10</label>
+                    <p>Opções: Desenvolvimento com Halteres ou Máquina de Ombros</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="remada-unilateral-upper">
+                    <label for="remada-unilateral-upper">Remada Unilateral com Halteres – 4x8-10</label>
+                    <p>Opções: Remada na Polia Baixa ou T-Bar Row</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="rosca-direta-upper">
+                    <label for="rosca-direta-upper">Rosca Direta com Barra – 3x10-12</label>
+                    <p>Opções: Rosca Alternada ou Máquina de Bíceps</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="triceps-testa-upper">
+                    <label for="triceps-testa-upper">Tríceps Testa com Barra EZ – 3x10-12</label>
+                    <p>Opções: Extensão de Tríceps na Polia Alta ou Francês com Halteres</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dia 5 -->
+        <section>
+            <h2>Dia 5 – Lower (Parte Inferior Geral + Abdômen)</h2>
+            <ul>
+                <li>
+                    <input type="checkbox" id="levantamento-terra">
+                    <label for="levantamento-terra">Levantamento Terra – 4x6-8</label>
+                    <p>Opções: Stiff ou Agachamento Frontal</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="agachamento-frontal">
+                    <label for="agachamento-frontal">Agachamento Frontal com Barra – 4x8-10</label>
+                    <p>Opções: Agachamento Livre ou Hack Machine</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="leg-press-unilateral">
+                    <label for="leg-press-unilateral">Leg Press Unilateral – 4x10-12</label>
+                    <p>Opções: Passada com Halteres ou Cadeira Extensora Unilateral</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="cadeira-flexora-lower">
+                    <label for="cadeira-flexora-lower">Cadeira Flexora – 4x10-12</label>
+                    <p>Opções: Flexora em Pé ou Stiff com Halteres</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="panturrilha-sentada">
+                    <label for="panturrilha-sentada">Panturrilha Sentada na Máquina – 3x15-20</label>
+                    <p>Opções: Panturrilha no Leg Press ou Panturrilha Livre com Peso</p>
+                </li>
+                <li>
+                    <input type="checkbox" id="abdominal-infra">
+                    <label for="abdominal-infra">Abdominal Infra com Peso (no banco inclinado) – 3x20</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="prancha-abdominal-peso">
+                    <label for="prancha-abdominal-peso">Prancha Abdominal com Peso (colocado nas costas) –
+                        3x30-60s</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="abdominal-obliquo-bicicleta">
+                    <label for="abdominal-obliquo-bicicleta">Abdominal Oblíquo (Bicicleta) – 3x20</label>
+                </li>
+            </ul>
+        </section>
+</body>
+
+</html>

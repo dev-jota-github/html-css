@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(27, 27, 27);
+    background-image: url(Imagens/backgroundbody.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+header{
+    height: 70px;
+    width: 100wh;
+    background-color: #170C26;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    box-shadow: #7937A6 0px 20px 30px -10px;
+}
+header img {
+    height: 60px;
+    border: px solid #7937A6;
+}
+header h1 {
+    color: white;
+    font-family: "Josefin Sans", serif;
+}
+.iconsocial {
+    align-items: center;
+}
+.conteiner{
+    justify-content: center;
+    height: 460px;
+    display: flex;
+    margin: auto;
+    max-width: 2000px;
+}
+.texto1{
+    justify-content: center;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    /*background-color: #9a0000;*/
+    padding: 50px 50px;
+    color: white;
+    font-family: "Montserrat", serif;
+}
+strong {
+    color: #ca6df2;
+}
+.texto1 h1 {
+    font-size: 1.8em;
+}
+.texto1 h2 {
+    text-align: center;
+    background-color: #7937A6;
+    padding: 10px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: #7937A6 0px 20px 30px -10px;
+}
+.texto1 p {
+    font-size: 1.2em;
+}
+.avatar img {
+    height: 100%;
+    width: auto;
+    border-radius: 0px 0px 200px 200px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: "Josefin Sans", serif;
+    color: white;
+    background-color: #170C26;
+    width: 340px;
+    height: 440px;
+    padding: 0 20px;
+    border-radius: 10px;
+}
+.card ul {
+    margin: 0 auto;
+}
+.card ul li{
+    list-style-type: none;
+}
+.card p {
+    text-align: center;
+}
+.card h2 {
+    text-align: center;
+    background-color: #7937A6;
+    padding: 10px;
+    width: 300px;
+    border-radius: 50px;
+    box-shadow: #7937A6 0px 20px 30px -10px;
+}
+.card h3{
+    text-align: center;
+    background-color: #7937A6;
+    padding: 10px;
+    width: 300px;
+    border-radius: 5px;
+    box-shadow: #7937A6 0px 20px 30px -10px;
+}
+.precoant {
+    text-decoration: line-through;
+    font-size: 2em;
+    color: red;
+}
+.garantia {
+    
+}
+.texto2 {
+    justify-content: center;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    /*background-color: #9a0000;*/
+    padding: 20px 20px;
+    color: white;
+    font-family: "Montserrat", serif;
+}
+.card .div{
+    font-size: 1.2em;
+}
+.precoatual{
+    font-size: 3em;
+    color: rgb(0, 182, 0);
+}
+.duvidas {
+    background-color: #170C26;
+}
+.faq {
+    text-align: center;
+}
+.faq h3 {
+    color: white;
+    font-size: 5em;
+    margin: 0;
+}
+.faq p {
+    font-size: 3em;
+    margin: 0;
+}
+.faqcards {
+    margin: 20px 0px 0px 0px;
+}
+.card-faq {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-around;
+}
+.pergunta {
+    background-color: #7937A6;
+    color: white;
+    padding: 10px 20px;
+    margin: 0;
+    width: 300px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+.resposta {
+    width: 300px;
+    margin: 10;
+    background-color: white;
+    padding: 20px;
+    border-radius: 0px 0px 20px 20px;
+}
