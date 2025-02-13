@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles/output.css">
+  <!--npx @tailwindcss/cli -i ./styles/style.css
+ -o ./styles/output.css --watch-->
+  <title>Document</title>
+</head>
+<body>
+  <!--Inicio Header-->
+
+  <header class="w-full h-[420px] bg-zinc-900 bg-cover bg-center">
+
+    <div class="w-full h-full flex flex-col justify-center items-center">
+
+      <img src="assets/hamb-1.png" alt="Logo Dev Burguer" class="w-32 h-32 rounded-full hover:scale-110 duration-200">
+
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+        Dev Burguer
+      </h1>
+
+      <span class="text-white font-medium">
+        Rua Dev 10, Campo grande - RJ
+      </span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-4" id="date-span">
+
+        <span class="text-white font-medium">
+          Seg a Dom - 18:00 as 22:00
+        </span>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <!--Fim Header-->
+
+  <h2 class="text-2xl md:text-4xl font-bold text-center mt-9 mb-6">
+    Conheça nosso Cardápio
+  </h2>
+
+  <!--Início Menu-->
+
+  <div id="menu">
+
+    <main class="grid grid-cols-1 md:grid-cols-2 gap-7 mx-auto max-w-7xl px-2 mb-16">
+
+      <!--Produto Item-->
+      <div class="flex justify-center item gap-2">
+        <img src="assets/hamb-1.png" alt="Hamburguer Smash" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold">Hamburguer Smash</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="text-bold text-lg">R$18,90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburguer Smash"
+              data-price="18.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--Produto Item-->
+
+      <!--Produto Item-->
+      <div class="justify-center flex gap-2">
+        <img src="assets/hamb-2.png" alt="Hamburguer Duplo" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        <div>
+          <p class="font-bold">Hamburguer Duplo</p>
+          <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="text-bold text-lg">R$32,90</p>
+            <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="Hamburguer Duplo"
+              data-price="32.90"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fim Produto Item-->
+
+    </main>
+    
+  </div>
+
+  <!--Fim Menu-->
+
+</body>
+</html>
